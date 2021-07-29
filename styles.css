@@ -1,0 +1,602 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 70px;
+}
+
+.logo:hover {
+
+  transition: 1.2s;
+  transform: scale(1.5, 1.5);
+}
+
+.navbar {
+  padding: 10px;
+  background-color: #9b59b6;
+  background-image: linear-gradient(#A65DA1, mediumpurple);
+
+}
+
+.navbar .navbar-brand {
+  color: #ecf0f1;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #ecdbff;
+}
+
+.navbar .navbar-text {
+  color: #ecf0f1;
+}
+
+.navbar .navbar-text a {
+  color: #ecdbff;
+}
+
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus {
+  color: #e2ffdb;
+
+}
+
+.navbar .navbar-nav .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ecf0f1;
+  border-radius: .25rem;
+  margin: 0 0.25em;
+
+}
+
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+  color: darkmagenta;
+}
+
+.navbar .navbar-nav .dropdown-menu {
+  background-image: linear-gradient(mediumpurple, #A65DA1);
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+  color: #ecf0f1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+.navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+  color: darkmagenta;
+  background-color: #d780ff;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-divider {
+  border-top-color: #8e44ad;
+}
+
+.nav-link:active {
+  color: aqua;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color: #7a40bb;
+  background-color: #cc8de7;
+}
+
+.navbar .navbar-toggler {
+  border-color: #8e44ad;
+}
+
+.navbar .navbar-toggler:hover,
+.navbar .navbar-toggler:focus {
+  background-color: #8e44ad;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  color: #ecf0f1;
+}
+
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border-color: #ecf0f1;
+}
+
+.navbar .navbar-link {
+  color: #ecf0f1;
+}
+
+.navbar .navbar-link:hover {
+  color: #ecdbff;
+}
+
+@media (max-width: 575px) {
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ecdbff;
+  }
+
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #8e44ad;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ecdbff;
+  }
+
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #af1515;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ecdbff;
+  }
+
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #8e44ad;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ffdbdb;
+  }
+
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ecdbff;
+    background-color: #8e44ad;
+  }
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+  color: #ecf0f1;
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+  color: #ecdbff;
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  color: #ecdbff;
+  background-color: #8e44ad;
+}
+
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.tituloCarousel {
+
+  animation-duration: 5s;
+  animation-name: aparecer;
+  color: #A65DA1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+  text-shadow: 2px 2px 2px rgb(243, 196, 255);
+
+}
+
+.descripcionCarousel {
+  animation-duration: 5s;
+  animation-name: aparecer;
+  color: #A65DA1;
+  font-size: 70px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 2px 2px 2px rgb(243, 196, 255);
+
+}
+
+
+.tituloCarousel2 {
+  animation-duration: 5s;
+  animation-name: aparecer;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80px;
+  color: rgb(109, 0, 172);
+  text-shadow: 1px 1px 2px black;
+}
+
+.descripcionCarousel2 {
+  animation-duration: 5s;
+  animation-name: aparecer;
+  color: rgb(109, 0, 172);
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+}
+
+.tituloCarousel3 {
+  animation-duration: 5s;
+  animation-name: aparecer;
+  color: rgb(73, 20, 160);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+}
+
+.descripcionCarousel3 {
+  animation-duration: 5s;
+  animation-name: aparecer;
+  color: rgb(73, 20, 160);
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.carousel-inner {
+  display: flex;
+  align-items: center;
+}
+
+.conteiner {
+  padding: 20px;
+}
+
+/*SECCION NOVEDADES*/
+
+.novedades {
+
+  background-image: url(images/fondoterapia.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+
+.tituloNovedad {
+
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #A65DA1;
+  font-size: 50px;
+}
+
+.gridNovedad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-family: 'Montserrat', sans-serif;
+  color: purple;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(245, 208, 243, 0.6);
+  transition: transform 0.3s;
+  border: solid 2px rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 25px;
+}
+
+
+.gridNovedad img {
+  border-radius: 25px;
+  display: block;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+
+}
+
+.gridNovedad:hover {
+  filter: saturate(2.0);
+}
+
+.gridNovedad:hover h1 {
+  color: #F2913D;
+  filter: saturate(2.0);
+}
+
+.gridNovedades {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+
+  grid-gap: 10px;
+}
+
+.gridNovedades h1 {
+
+  text-align: center;
+}
+
+/*PAGINA CONOCENOS*/
+.seccionConocenos {
+  background-color: #f8f9fa;
+  padding: 25px;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.seccionConocenos .seccionImg {
+  width: 50%;
+}
+
+.seccionConocenos .seccionTexto h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.seccionConocenos .seccionTexto p {
+  font-size: 18px;
+}
+
+
+/* PAGINA PRODUCTOS  */
+
+
+
+/*PAGINA TERAPIAS*/
+
+
+.gridItem {
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 208, 243, 0.6);
+  transition: transform 0.3s;
+  border: solid 2px rgb(255, 255, 255);
+  border-radius: 25px;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.gridItem p {
+
+  color: purple;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+
+.gridItem img {
+  border-radius: 25px;
+  display: block;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+
+}
+
+.gridItem:hover {
+  filter: saturate(2.0);
+}
+
+
+
+.gridContenedor {
+
+  background-image: url(images/fondoterapia.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+
+}
+
+
+
+@media (min-width: 600px) {
+  .anchoItem {
+    grid-column: 2 span;
+  }
+
+  .alturaItem {
+    grid-row: 2 span;
+  }
+}
+
+
+/*Pagina Encuentranos*/
+
+.contenidoContacto {
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenidoContacto h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.encuentranosTitle {
+  text-align: center;
+  font-size: 3em;
+
+}
+
+
+
+.encuentranosTitle {
+  text-align: center;
+  font-size: 3em;
+
+}
+
+.contenedorContacto {
+  box-shadow: 0 0 20px rgb(255, 255, 255, 10);
+}
+
+
+.formContacto form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px;
+
+}
+
+.formContacto form .block {
+  grid-column: 1 / 3;
+}
+
+.formContacto {
+
+  padding: 50px;
+}
+
+.formContacto form input,
+.formContacto form textarea {
+  width: 100%;
+  padding: .7ems;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #333;
+  outline: 0;
+}
+
+.formContacto form button {
+
+  width: 100%;
+  border: 1;
+  background-color: rgb(156, 248, 128);
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.infoContacto {
+  background-color: mediumpurple;
+  width: 100%;
+}
+
+.infoContacto ul {
+  list-style: none;
+
+}
+
+.infoContacto h4,
+.infoContacto ul,
+.infoContacto p {
+  text-align: center;
+
+}
+
+/*PAGINA PRODUCTOS*/
+
+.contenidoProductos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+/*FOOTER */
+footer {
+
+  color: #f3b1d5;
+  position: sticky;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#A65DA1, mediumpurple);
+
+}
+
+footer nav ul {
+
+  text-align: center;
+}
+
+footer nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+footer nav ul a:hover {
+  text-decoration: forestgreen;
+
+}
+
+.footerContenido {
+
+  width: 100%;
+  margin: 0px;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
